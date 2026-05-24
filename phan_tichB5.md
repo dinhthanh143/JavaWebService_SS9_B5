@@ -1,0 +1,2 @@
+- **Dễ parse & lọc theo trường**: JSON log giúp ELK/Datadog trích xuất trực tiếp các field như `level`, `timestamp`, `requestId`, `errorCode`… thay vì phải regex trên text log. Nhờ đó truy vấn/biểu đồ theo thời gian thực chính xác và nhanh hơn.
+- **Tăng khả năng quan sát & tương quan sự kiện**: Khi có cấu trúc (ví dụ thêm `requestId`), hệ thống monitor có thể tự động “join”/tập hợp các log cùng một luồng request để dựng timeline lỗi, giảm thời gian tìm dấu vết trong hàng triệu dòng log.
